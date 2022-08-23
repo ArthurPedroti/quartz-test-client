@@ -21,7 +21,7 @@ jobs:
 
     - name: Run build
       run: yarn build
-      env.production:
+      env:
         NEXT_PUBLIC_APP_NAME: quartz
         NEXT_PUBLIC_API_HOST: ${{ secrets.NEXT_PUBLIC_API_HOST }}
 
