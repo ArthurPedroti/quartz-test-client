@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should render the chakra styles 1`] = `
+<div
+  class="css-0"
+>
+  <div
+    class="chakra-form-control css-0"
+    role="group"
+  >
+    <label
+      class="chakra-form__label css-uvho5g"
+      for="teste"
+      id="field-3-label"
+    >
+      Deu certo
+    </label>
+    <input
+      class="chakra-input css-0"
+      id="teste"
+      name="teste"
+    />
+  </div>
+</div>
+`;
