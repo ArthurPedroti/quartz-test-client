@@ -77,15 +77,11 @@ export function AuthProvider({ children }: AuthProviderProps) {
           }
         })
         .then((response) => {
-          const {
-            name,
-            username,
-            department: { name: department }
-          } = response.data
+          const { name, username, department } = response.data
           setUser({
             name,
             username,
-            department
+            department: department?.name
           })
         })
         .catch(() => {
@@ -119,16 +115,12 @@ export function AuthProvider({ children }: AuthProviderProps) {
         }
       })
 
-      const {
-        name,
-        username,
-        department: { name: department }
-      } = user.data
+      const { name, username, department } = user.data
 
       setUser({
         name,
         username,
-        department
+        department: department?.name
       })
 
       authChannel.postMessage('signIn')

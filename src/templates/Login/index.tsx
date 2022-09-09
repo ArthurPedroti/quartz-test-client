@@ -27,7 +27,7 @@ const Login = () => {
 
   const handleSignIn: SubmitHandler<SignInFormData> = async (values) => {
     await signIn(values)
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    await new Promise((resolve) => setTimeout(resolve, 10000))
   }
 
   return (
